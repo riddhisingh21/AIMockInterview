@@ -1,9 +1,19 @@
 import { Sparkles } from "lucide-react";
-/*import Marquee from "react-fast-marquee";*/
+import Marquee from "react-fast-marquee";
+
+import heroImg from '../../src/assets/img/hero.jpg'
+import officeImg from '../../src/assets/img/office.jpg'
+import firebaseImg from '../../src/assets/img/logo/firebase.png'
+import meetImg from '../../src/assets/img/logo/meet.png'
+import microsoftImg from '../../src/assets/img/logo/microsoft.png'
+import tailwindImg from '../../src/assets/img/logo/tailwindcss.png'
+import reactImg from '../../src/assets/img/logo/react.png'
+import zoomImg from '../../src/assets/img/logo/zoom.png'
+
 
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
-/*import { MarqueImg } from "@/components/marquee-img";*/
+import { MarqueImg } from "@/components/marquee-img";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -47,7 +57,7 @@ const HomePage = () => {
         {/* image section */}
         <div className="w-full mt-4 rounded-xl bg-gray-100 h-[420px] drop-shadow-md overflow-hidden relative">
           <img
-            src="/assets/img/hero.jpg"
+            src={heroImg}
             alt=""
             className="w-full h-full object-cover"
           />
@@ -70,19 +80,19 @@ const HomePage = () => {
         </div>
       </Container>
 
-      {/* marquee section 
+      {/* {/* marquee section  */}
       <div className=" w-full my-12">
         <Marquee pauseOnHover>
-          <MarqueImg img="/assets/img/logo/firebase.png" />
-          <MarqueImg img="/assets/img/logo/meet.png" />
-          <MarqueImg img="/assets/img/logo/zoom.png" />
-          <MarqueImg img="/assets/img/logo/firebase.png" />
-          <MarqueImg img="/assets/img/logo/microsoft.png" />
-          <MarqueImg img="/assets/img/logo/meet.png" />
-          <MarqueImg img="/assets/img/logo/tailwindcss.png" />
-          <MarqueImg img="/assets/img/logo/microsoft.png" />
+          <MarqueImg img={firebaseImg} />
+          <MarqueImg img={meetImg} />
+          <MarqueImg img={zoomImg} />
+          <MarqueImg img={firebaseImg} />
+          <MarqueImg img={microsoftImg} />
+          <MarqueImg img={meetImg} />
+          <MarqueImg img={tailwindImg}/>
+          <MarqueImg img={reactImg} />
         </Marquee>
-      </div>*/}
+      </div>
 
       <Container className="py-8 space-y-8">
         <h2 className="tracking-wide text-xl text-gray-800 font-semibold">
@@ -93,7 +103,7 @@ const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           <div className="col-span-1 md:col-span-3">
             <img
-              src="/assets/img/office.jpg"
+              src={officeImg}
               alt=""
               className="w-full max-h-96 rounded-md object-cover"
             />
