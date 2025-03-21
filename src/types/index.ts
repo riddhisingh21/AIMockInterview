@@ -9,7 +9,7 @@ export interface User {
   updateAt: Timestamp | FieldValue;
 }
 
-/*export interface Interview {
+export interface Interview {
   id: string;
   position: string;
   description: string;
@@ -32,4 +32,4 @@ export interface UserAnswer {
   userId: string;
   createdAt: Timestamp;
   updateAt: Timestamp;
-}*/
+}
