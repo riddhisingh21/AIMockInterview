@@ -1,9 +1,9 @@
 import { Sparkles } from "lucide-react";
-import Marquee from "react-fast-marquee";
+/*import Marquee from "react-fast-marquee";*/
 
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
-import { MarqueImg } from "@/components/marquee-img";
+/*import { MarqueImg } from "@/components/marquee-img";*/
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -70,7 +70,7 @@ const HomePage = () => {
         </div>
       </Container>
 
-      {/* marquee section */}
+      {/* marquee section 
       <div className=" w-full my-12">
         <Marquee pauseOnHover>
           <MarqueImg img="/assets/img/logo/firebase.png" />
@@ -82,7 +82,7 @@ const HomePage = () => {
           <MarqueImg img="/assets/img/logo/tailwindcss.png" />
           <MarqueImg img="/assets/img/logo/microsoft.png" />
         </Marquee>
-      </div>
+      </div>*/}
 
       <Container className="py-8 space-y-8">
         <h2 className="tracking-wide text-xl text-gray-800 font-semibold">
