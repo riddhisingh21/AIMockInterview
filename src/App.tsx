@@ -53,6 +53,4 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
-
-export default App;
+port default App;
